@@ -1,0 +1,14 @@
+Laplacian-P-splines for estimation of Rt under misreported data
+================
+
+This Github repository gathers the R code to reproduce the results of
+the working paper <https://doi.org/10.1101/2021.05.19.21257438>.
+
+## License
+
+Copyright © 2022 Oswaldo Gressani. All rights reserved.
+
+## Acknowledgments
+
+This project is funded by the European Union’s Research and Innovation
+Action under the H2020 work programme, EpiPose (grant number 101003688).
