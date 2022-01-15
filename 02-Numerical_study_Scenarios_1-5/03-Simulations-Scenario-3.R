@@ -23,7 +23,7 @@ delay_struct <- "weekend"  # Delay structure: "oneday", "twoday" or "weekend"
 set.seed(1111)             # Seed
 Ttime <- 30                # Number of days of an epidemic
 rho <- 0.2                 # True reporting probability
-K <- 10                    # Number of (cubic) B-splines in basis
+K <- 8                     # Number of (cubic) B-splines in basis
 dimlat <- K                # Dimension of latent vector
 penorder <- 3              # Order of the penalty
 alpha <- 5/100             # Level for credible intervals
@@ -56,7 +56,6 @@ progbar <- progress::progress_bar$new(
 
 #-------------------------- Loop starts
 for(s in 1:S){
-
 
 # Composition matrix for one day delay
 C_oneday <- function(deltas){
@@ -153,14 +152,14 @@ moove <- function(x, nmooves){
 
 # Correcting for 0 obs on weekends
 Ott <- Ot
-Ott[6]  <- max(Ot[1:5]) - min(Ot[1:5])
-Ott[7]  <- max(Ot[1:6]) - min(Ot[1:6])
-Ott[13] <- max(Ot[8:12]) - min(Ot[8:12])
-Ott[14] <- max(Ot[8:13]) - min(Ot[8:13])
-Ott[20] <- max(Ot[15:19]) - min(Ot[15:19])
-Ott[21] <- max(Ot[15:20]) - min(Ot[15:20])
-Ott[27] <- max(Ot[22:26]) - min(Ot[22:26])
-Ott[28] <- max(Ot[22:27]) - min(Ot[22:27])
+Ott[6]  <- mean(Ot[1:5])
+Ott[7]  <- mean(Ot[1:6])
+Ott[13] <- mean(Ot[8:12])
+Ott[14] <- mean(Ot[8:13])
+Ott[20] <- mean(Ot[15:19])
+Ott[21] <- mean(Ot[15:20])
+Ott[27] <- mean(Ot[22:26])
+Ott[28] <- mean(Ot[22:27])
 Mtestim <- round((1 / rho) * Ott)
 
 #----- Estimation of Rt and hyperparameter vector (lambda, rho, delta)
@@ -688,7 +687,7 @@ dlogpetaR <- function(etaR, theta){
 #---------- Newton-Raphson to find posterior max of hyperparam vector 
 
 # Gradient ascent to determine "wise" initial condition
-grad_ascent <- function(eta, dist=3, epsil=0.001){
+grad_ascent <- function(eta, dist=3, epsil=0.01){
   
   theta0 <- rep(1,K)  # Initial theta vector
   iter <- 0
@@ -798,10 +797,9 @@ Newton_Raphson <- function(eta0, epsil = 0.01, maxiter = 500){
 }
 
 # Initial hyperparameter values
-
 prob_init <- rep(0.3, (dim_eta - 2))
-lambda_init <- 320000
-rho_init <- 0.25
+lambda_init <- 100
+rho_init <- 0.18
 
 eta0 <- c(log(lambda_init), log(-log(rho_init)), log(-log(prob_init)))
 eta0 <- grad_ascent(eta0) 
@@ -865,13 +863,10 @@ for(j in 1:nrow(CIrhodelta)){
                             
 }
 
-
 #--- Keep result for performance metrics
 
 rho_delta_hat[s,] <- c(rho_hat, delta_hat)
 theta_mat[s,] <- theta_hat
-
-
 
 #--- Stop chronometer for timing
 toc <- proc.time()-tic
