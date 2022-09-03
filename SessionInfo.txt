@@ -1,0 +1,33 @@
+R version 4.2.1 (2022-06-23 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19044)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=French_France.utf8  LC_CTYPE=French_France.utf8    LC_MONETARY=French_France.utf8
+[4] LC_NUMERIC=C                   LC_TIME=French_France.utf8    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] COVID19_3.0.2       latex2exp_0.9.4     reshape2_1.4.4      xlsx_0.6.5         
+ [5] progress_1.2.2      crayon_1.5.1        numDeriv_2016.8-1.1 EpiEstim_2.2-4     
+ [9] blapsr_0.6.1        survival_3.3-1      gridExtra_2.3       ggplot2_3.3.6      
+[13] incidence_1.7.3    
+
+loaded via a namespace (and not attached):
+ [1] xfun_0.31             rJava_1.0-6           splines_4.2.1         lattice_0.20-45      
+ [5] colorspace_2.0-3      vctrs_0.4.1           htmltools_0.5.3       yaml_2.3.5           
+ [9] MCMCpack_1.6-3        utf8_1.2.2            rlang_1.0.4           pillar_1.8.0         
+[13] glue_1.6.2            withr_2.5.0           fitdistrplus_1.1-8    lifecycle_1.0.1      
+[17] plyr_1.8.7            stringr_1.4.0         MatrixModels_0.5-0    munsell_0.5.0        
+[21] gtable_0.3.0          coda_0.19-4           evaluate_0.15         knitr_1.39           
+[25] fastmap_1.1.0         SparseM_1.81          quantreg_5.94         xlsxjars_0.6.1       
+[29] fansi_1.0.3           Rcpp_1.0.9            scales_1.2.0          mcmc_0.9-7           
+[33] coarseDataTools_0.6-6 hms_1.1.1             digest_0.6.29         stringi_1.7.8        
+[37] grid_4.2.1            cli_3.3.0             tools_4.2.1           magrittr_2.0.3       
+[41] tibble_3.1.8          pkgconfig_2.0.3       ellipsis_0.3.2        MASS_7.3-57          
+[45] Matrix_1.4-1          data.table_1.14.2     prettyunits_1.1.1     rmarkdown_2.14       
+[49] rstudioapi_0.13       R6_2.5.1              compiler_4.2.1   
