@@ -3,11 +3,43 @@ estimation of the instantaneous reproduction number under misrepoted
 epidemic data’
 ================
 Oswaldo Gressani
-2022-09-03
+2022-11-03
 
-### Structure of the repository
+### Reproducibility instructions
+
+This GitHub repository contains all the routines required to reproduce
+the tables and figures of the paper entitled “An approximate Bayesian
+approach for estimation of the instantaneous reproduction number under
+misreported epidemic data” published in XXXXXX. The repository is
+structured into four main folders (**01-Simulations**, **02-Figures**,
+**03-RealData** and **04-Complement**). Table 1 below indicates how to
+reproduce an object of interest (Object), the location of that object in
+the main manuscript (Section), the folder in which to find the desired
+routine(s) (Folder) and the R routines (Code(s)) required to reproduce
+the object of interest. <br> <br> The routine *simepi.R* is used as a
+subroutine to simulate epidemic data and *simul.R* is the core function
+to reproduce the simulation results in Section 3.1 (Scenario 1 –
+Scenario 6) of the manuscript. The different simulation scenarios have
+an associated seed, so that the results can be recovered exactly. In
+addition, the **02-Figures** folder contains routines to reproduce
+Figure 1, 4 and 5, respectively. Figure 2 and Figure 3 can be recovered
+with the routines in the **01-Simulations** folder. The **03-RealData**
+folder contains the algorithms to reproduce the real data applications
+in Section 4 of the paper (together with Figure 6 and Figure 7). Table 1
+has no associated folder as it contains ‘handwritten’ text that
+summarizes the setting of each scenario. Note that the computation time
+(real elapsed time) reported in the main manuscript is specific to an
+Intel Xeon E-2186M CPU running at a base clock speed of 2.90 GHz.
 
 ![](FolderStructure.png)
+
+### Repository version
+
+This is version 0.0.1 (2022-11-03) - “Simplified structure”.
+
+### License
+
+Copyright © Oswaldo Gressani. All rights reserved.
 
 ### Acknowledgments
 
