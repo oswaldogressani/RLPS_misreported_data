@@ -2,7 +2,7 @@
 title: "Reproducing the results of 'An approximate Bayesian approach for estimation of the instantaneous reproduction number under misrepoted epidemic data'"
 output: github_document
 author: Oswaldo Gressani
-date: 2022-11-03
+date: 2022-11-04
 ---
 
 ```{r setup, include=FALSE}
@@ -24,7 +24,7 @@ The routine *simepi.R* is used as a subroutine to simulate epidemic data and *si
 ![](FolderStructure.png)
 
 ### Repository version
-This is version 0.0.1 (2022-11-03) - “Simplified structure”.
+This is version 0.0.2 (2022-11-04) - “Simplified structure”.
 
 ### License
 Copyright © Oswaldo Gressani. All rights reserved.

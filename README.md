@@ -3,7 +3,7 @@ estimation of the instantaneous reproduction number under misrepoted
 epidemic data’
 ================
 Oswaldo Gressani
-2022-11-03
+2022-11-04
 
 [![DOI](https://zenodo.org/badge/532182908.svg)](https://zenodo.org/badge/latestdoi/532182908)
 
@@ -37,7 +37,7 @@ Intel Xeon E-2186M CPU running at a base clock speed of 2.90 GHz.
 
 ### Repository version
 
-This is version 0.0.1 (2022-11-03) - “Simplified structure”.
+This is version 0.0.2 (2022-11-04) - “Simplified structure”.
 
 ### License
 
