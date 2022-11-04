@@ -873,7 +873,7 @@ rho_fun <- function(t) {
 ttdom <- seq(Ttime)
 plot(ttdom, sapply(ttdom, rho_fun), type = "l", col = "black",
      ylim = c(0,0.9), xlim = c(0, 30), xlab = "Time", ylab = TeX("$\\rho_t$"),
-     lty = 1, main = "Time dependent reporting rate (step-function)",
+     lty = 1, main = "Time-dependent reporting rate (step-function)",
      cex.main = 1.1, cex.axis = 1.3, cex.lab = 1.3)
 grid(10,10)
 lines(ttdom, sapply(ttdom, rho_fun), type="p", col = "dodgerblue",
