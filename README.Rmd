@@ -9,6 +9,11 @@ date: 2022-11-03
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+[![DOI](https://zenodo.org/badge/532182908.svg)](https://zenodo.org/badge/latestdoi/532182908)
+
+
+
 ### Reproducibility instructions
 
 This GitHub repository contains all the routines required to reproduce the tables and figures of the paper entitled “An approximate Bayesian approach for estimation of the instantaneous reproduction number under misreported epidemic data” published in XXXXXX. The repository is structured into four main folders (**01-Simulations**, **02-Figures**, **03-RealData** and **04-Complement**). Table 1 below indicates how to reproduce an object of interest (Object), the location of that object in the main manuscript (Section), the folder in which to find the desired routine(s) (Folder) and the R routines (Code(s)) required to reproduce the object of interest. <br>

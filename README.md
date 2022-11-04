@@ -5,6 +5,8 @@ epidemic data’
 Oswaldo Gressani
 2022-11-03
 
+[![DOI](https://zenodo.org/badge/532182908.svg)](https://zenodo.org/badge/latestdoi/532182908)
+
 ### Reproducibility instructions
 
 This GitHub repository contains all the routines required to reproduce
