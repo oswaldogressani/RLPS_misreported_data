@@ -875,7 +875,8 @@ if(delay_struct=="oneday") {
 
 plot(seq(8,Ttime),Rthat,col="black",type="l",xlab="Time",ylab="R",
      xlim=c(0,Ttime), ylim=c(0,2.7), xaxt="n",
-     main=paste0("Estimated R ","(",delay_struct,")"),
+     main=paste0("Estimated R ","(",substr(delay_struct,1,3),"-",
+                 substr(delay_struct,4,6),")"),
      cex.main=0.92) #Estimated R with LPS
 abline(h=1, lty=3,col="black")
 axis(side = 1, at=seq(8,Ttime,by=10),
