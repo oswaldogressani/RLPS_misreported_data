@@ -30,7 +30,7 @@ This is version 0.1.0 (2022-12-08) - “Final structure”.
 Copyright © Oswaldo Gressani. All rights reserved.
 
 ### URL commit hash
-
+https://github.com/oswaldogressani/RLPS_misreported_data/commit/4b58443175834a8c40f361c2a86dc74acea8be47
 
 ### Acknowledgments
 
